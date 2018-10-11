@@ -18,4 +18,7 @@
         </property>
     </bean>
 
+    <bean id="convertUtils" class="rest.util.ConvertUtils" />
+    <bean id="beanUtil" class="rest.util.BeanUtil" />
+
 </beans>
