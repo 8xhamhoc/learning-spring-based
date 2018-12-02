@@ -27,7 +27,7 @@
     <bean id="employeeValidator" class="rest.validator.EmployeeFormValidator" />
 
     <bean class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-        <property name="basename" value="classpath:messages.properties" />
+        <property name="basename" value="classpath:messages" />
         <property name="defaultEncoding" value="UTF-8" />
     </bean>
 

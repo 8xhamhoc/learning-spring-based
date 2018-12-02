@@ -12,6 +12,7 @@
     <properties>
         <springframework.version>4.0.6.RELEASE</springframework.version>
         <org.slf4j-version>1.7.5</org.slf4j-version>
+        <org.aspectj-version>1.7.4</org.aspectj-version>
     </properties>
 
     <dependencies>
@@ -119,6 +120,18 @@
                 </exclusion>
             </exclusions>
             <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${org.aspectj-version}</version>
         </dependency>
 
     </dependencies>

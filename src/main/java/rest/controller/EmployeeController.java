@@ -53,13 +53,13 @@ public class EmployeeController {
     }
 
     @RequestMapping(value = "/emp/save.do", method = RequestMethod.POST)
-    public String saveEmployeeAction(
-            @ModelAttribute("employee") @Validated Employee employee,
-            BindingResult bindingResult, Model model) {
+    public String saveEmployeeAction(@ModelAttribute("employee") @Validated Employee employee,
+                                     BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
             logger.info("Returning empSave.jsp page");
             return "empSave";
         }
+
         logger.info("Returning empSaveSuccess.jsp page");
         model.addAttribute("emp", employee);
         emps.put(employee.getId(), employee);
