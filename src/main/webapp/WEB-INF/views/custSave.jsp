@@ -7,11 +7,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Customer Save Page</title>
 <style>
-.error {
-	color: #ff0000;
-	font-style: italic;
-	font-weight: bold;
-}
+    .error {
+        color: #ff0000;
+        font-style: italic;
+        font-weight: bold;
+    }
 </style>
 </head>
 <body>
@@ -35,11 +35,13 @@
 			</tr>
 			<tr>
 				<td>Gender:</td>
-				<td><springForm:select path="gender">
+				<td>
+					<springForm:select path="gender">
 						<springForm:option value="" label="Select Gender" />
 						<springForm:option value="MALE" label="Male" />
 						<springForm:option value="FEMALE" label="Female" />
-					</springForm:select></td>
+					</springForm:select>
+				</td>
 				<td><springForm:errors path="gender" cssClass="error" /></td>
 			</tr>
 			<tr>
@@ -56,7 +58,6 @@
 				<td colspan="3"><input type="submit" value="Save Customer"></td>
 			</tr>
 		</table>
-
 	</springForm:form>
 
 </body>
