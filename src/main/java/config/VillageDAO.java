@@ -1,4 +1,5 @@
 package config;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,7 +14,7 @@ public class VillageDAO {
 	private DataSource dataSource;
 	
 	public VillageDAO(DataSource dataSource){
-		this.dataSource= dataSource;
+		this.dataSource = dataSource;
 	}
 
 	public void save() throws SQLException {
@@ -23,8 +24,8 @@ public class VillageDAO {
 	}
 
 	public Map<String, String> selectFirstRow() throws SQLException {
-		Connection con=dataSource.getConnection();
-		Statement st= con.createStatement();
+		Connection con = dataSource.getConnection();
+		Statement st = con.createStatement();
 		ResultSet rs = st.executeQuery("select name, district from village");
 		rs.first();
 		Map<String, String> map = new HashMap<>();
