@@ -13,6 +13,8 @@
                              default-target-url="/welcome"
                              authentication-failure-url="/login?error" />
         <security:logout logout-success-url="/login?logout" />
+        <security:access-denied-handler error-page="/403" />
+        <security:csrf/>
     </security:http>
 
     <security:authentication-manager>
