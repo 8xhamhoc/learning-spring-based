@@ -1,7 +1,7 @@
-package service;
+package com.service;
 
-import dao.UserInfoDAO;
-import model.UserInfo;
+import com.dao.UserInfoDAO;
+import com.model.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

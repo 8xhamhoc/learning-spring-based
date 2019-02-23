@@ -1,7 +1,7 @@
-package dao;
+package com.dao;
 
-import model.UserInfo;
-import model.UserInfoMapper;
+import com.model.UserInfo;
+import com.model.UserInfoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
